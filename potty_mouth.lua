@@ -2,7 +2,7 @@ if SERVER then
     -- Create an array of blacklisted words
     local blacklistedWords = {"blacklisted_word", "blacklisted_word2", "blacklisted_word3"}
 
-    -- Hook into the PlayerSay event which is called whenever a player says something in chat.
+    -- Hook into the PlayerSay event which is called whenever a player says something in chat. 
     hook.Add("PlayerSay", "ChatFilter", function(ply, text)
         -- Convert the player's message to lowercase for case-insensitive comparison
         local lowerText = string.lower(text)
